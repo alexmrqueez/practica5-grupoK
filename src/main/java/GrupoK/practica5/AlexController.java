@@ -8,6 +8,7 @@ public class AlexController {
 
     @GetMapping("/alex")
     public String saludo() {
-        return "¡hello world desde Alex!";
+        return "¡Hola Mundo pero cambiado!";
     }
 }
+
