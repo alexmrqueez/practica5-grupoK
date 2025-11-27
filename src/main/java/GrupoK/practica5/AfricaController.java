@@ -9,6 +9,6 @@ public class AfricaController {
 
     @GetMapping("/africa")
     public String hola() {
-        return "¡hello world desde Africa!";
+        return "¡me gustan las patatas bravas!";
     }
 }
