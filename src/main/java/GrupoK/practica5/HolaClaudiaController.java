@@ -8,7 +8,7 @@ public class HolaClaudiaController {
 
     @GetMapping("/claudia")
     public String hola() {
-    	return "¡hello world desde claudia!" ;
+    	return "¡Me gusta GitHub!" ;
     }
 
 }
