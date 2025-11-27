@@ -3,3 +3,4 @@
 Integrantes:
 - Alex
 - Africa
+- Claudia
