@@ -1,4 +1,4 @@
-package GrupoK.practica5;
+package GrupoK.practica6.registros;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
