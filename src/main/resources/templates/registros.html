@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de registros</title>
+</head>
+<body>
+
+<h1>Listado de registros de consumo</h1>
+
+<a href="/registros/nuevo">➕ Nuevo registro</a>
+
+<br><br>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>ID</th>
+        <th>Mililitros</th>
+        <th>Fecha y hora</th>
+        <th>Acciones</th>
+    </tr>
+
+    <tr th:each="reg : ${registros}">
+        <td th:text="${reg.id}"></td>
+        <td th:text="${reg.mililitros}"></td>
+        <td th:text="${reg.fechaHora}"></td>
+
+        <td>
+            <a th:href="@{|/registros/editar/${reg.id}|}">Editar</a>
+            &nbsp;|&nbsp;
+            <a th:href="@{|/registros/eliminar/${reg.id}|}"
+               onclick="return confirm('¿Seguro que quieres eliminarlo?');">
+                Eliminar
+            </a>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
+
