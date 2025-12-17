@@ -1,18 +1,17 @@
 package GrupoK.practica6.registros;
 
-
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 public class RegistroConsumo {
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int mililitros;   
-    private LocalDateTime fechaHora; 
+    private int mililitros;
+    private LocalDateTime fechaHora;
 
     public RegistroConsumo() {
     }
@@ -42,4 +41,3 @@ public class RegistroConsumo {
         this.fechaHora = fechaHora;
     }
 }
-
